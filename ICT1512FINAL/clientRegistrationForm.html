@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		 <meta charset="UTF-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+		 integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		 <link rel="stylesheet" href="Stylesheet/style.css">
+		 <title>mshtechsolutions</title>
+         <script src="proj.js" defer></script>
+
+		 <!--
+		 Student Name: Taurai Muzembe 
+		 File Name: Final Project MSH TECH SOLUTIONS
+		 /Date : 01/07/2024
+		 -->
+	</head>
+	<!--Use the body section for all elements inside the body element-->
+	<body>
+		<div id="container">
+		<header>
+	<!--logo company information -->
+				<h1>MSHTECH SOLUTIONS</h1>
+			
+		</header>
+	<!--Use the navigation area for inserting your nav bar-->
+		    <nav class="navbar">
+				<div class="navdiv">
+				<div class="logo"><a href="index.html"><img src="images/MSHteclogo-removebg-preview(1).png" alt="MSHteclogo" height="170" width="200" ></a></div>
+				<ul>
+					<li><a href="index.html" >Home </a></li>
+					<li><a href="clientRegistrationForm.html" >client Registration Form</a></li>
+                    <li><a href="Product.html" >Product </a></li>
+                    <li><a href="orderSubmit.html " >orderSubmit </a></li>	
+					<li><a href="contact.html"> Contact</a></li>
+				</ul>
+			</div>
+			</nav>
+	<!--the main are to be used for as the container on the web content-->
+	<main>
+		<div id="reg-form">
+            <fieldset id="registration">
+            <h1>Client Registration Form </h1>
+            <form name="clientForm" onsubmit="return validateForm()" action="orderSubmit.html" method="POST">
+
+            <label for="preferedName">Prefered Name:</label>
+            <input type="text" id="preferedName" name="prefered Name" required><br>
+
+            <label for="ClientFullNamesasonID">Client Full Names as on ID: </label>
+            <input type="text" id="ClientFullNamesasonID" name="Client Full Names as on ID" required><br>
+
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" required><br>
+
+            <label for="idNumber">ID Number:</label>
+            <input type="text" id="idNumber" name="idNumber" maxlength="13" required><br>
+
+            <label for="workPhone">Telephone Work:</label>
+            <input type="text" id="workPhone" name="workPhone" maxlength="10" required><br>
+
+            <label for="cellPhone">Cellphone Number:</label>
+            <input type="text" id="cellPhone" name="cellPhone" maxlength="10" required><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="homeAddress">Home Address:</label>
+            <textarea id="homeAddress" name="homeAddress" required></textarea><br>
+
+            <label for="postalAddress">Postal Address:</label>
+            <textarea id="postalAddress" name="postalAddress" required></textarea>
+            <button type="button" onclick="copyAddress()">Copy Home Address</button><br>
+
+        </fieldset>
+        <fieldset id="info">
+            <h1>where did you hear about us</h1>
+
+            <label for="SocialMedia">Social Media</label>
+            <input type="radio" id="SocialMedia" name="SocialMedia" required><br>
+
+            <label for="Advertisement">Advertisement</label>
+            <input type="radio" id="Advertisement" name="Advertisement" required><br>
+
+            <label for="WordOfMouth">Word Of Mouth</label>
+            <input type="radio" id="WordOfMouth" name="WordOfMouth" required><br>
+
+            <label for="InternetSearch">Internet Search</label>
+            <input type="radio" id="InternetSearch" name="InternetSearch" required><br>
+        </fieldset>
+        <fieldset>
+            <h2>Payment information</h2>
+            <label for="creditCardName">Name on Credit Card:</label>
+            <input type="text" id="creditCardName" name="creditCardName" required><br>
+
+            <label for="creditCardType">Credit Card Type:</label>
+            <select id="creditCardType" name="creditCardType" required>
+                <option value="Visa">Visa</option>
+                <option value="MasterCard">Master Card</option>
+                <option value="AmericanExpress">American Express</option>
+            </select><br>
+
+            <label for="creditCardNumber">Credit Card Number:</label>
+    <input type="text" id="creditCardNumber" name="creditCardNumber" maxlength="16" required><br>
+
+    <label for="expMonth">Expiration Month:</label>
+    <select id="expMonth" name="expMonth" required>
+        <option value="01">January</option>
+        <option value="02">February</option>
+        <option value="03">March</option>
+        <option value="04">April</option>
+        <option value="05">May</option>
+        <option value="06">June</option>
+        <option value="07">July</option>
+        <option value="08">August</option>
+        <option value="09">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+    </select>
+
+    <label for="expYear">Expiration Year:</label>
+    <select id="expYear" name="expYear" required>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+        <option value="2026">2026</option>
+        <option value="2027">2027</option>
+        <option value="2028">2028</option>
+        <option value="2029">2029</option>
+    </select><br>
+
+    <label for="cvc">CVC Number:</label>
+    <input type="text" id="cvc" name="cvc" maxlength="4" required><br>
+
+    <button onclick="showData()">Submit</button>
+</fieldset>
+</form>
+                
+	</main>
+	<!--Use the footer to add to the webpage-->
+	<footer>
+		<p>&copy; Copyright 2021. All Rights Reserved</p>
+		<p><i class="fa-solid fa-envelope"></i>&#160<a href="mailto:admin@mshtechsolutions.com">admin@mshtechsolutions.com</a></p>
+		<p><i class="fa-solid fa-phone"></i>&#160 +27 66 493 4220</p>
+		
+	</footer>
+</div>
+	</body>
+</html>
+

@@ -1,0 +1,207 @@
+/*
+Author:Taurai Muzembe
+date:01/07/2024
+File name: style.css
+*/
+/*reset css*/
+body header nav main footer h1 div img{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+}
+body{
+    background: rgb(239, 238, 237);
+}
+main{
+    clear: left;
+}
+/*styling for the header section*/
+h1{
+    text-align: center;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+/*style the product section*/
+#layout{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.layout-item{
+    background-color: white;
+    box-shadow: 0px 0px 8px  rgb(36, 35, 35);
+    border-radius: 10px;
+    width: 300px;
+    height: 540px;
+    transition: 0.5s;
+}
+.layout-item img{
+    text-align: right;
+}
+.layout-item:hover{
+    transform: scale(1.1);
+    border-radius: 20px; 
+}
+/*product heading styling*/
+h3{
+    text-align: center;
+    font-size: 45px;
+    background-color: #000000;
+    
+}
+.name{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 0;
+    font-weight: 500;
+    margin-top: 0;
+}
+.desc{
+    font-weight: 300;
+    text-align: center;
+    margin-top: 0;
+    font-size: 15px;
+    margin-bottom: 0;
+
+}
+.price{
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 0px;
+    text-align: center;
+}
+.navbar{
+    background: rgb(156, 177, 103); 
+    font-family: calibri; 
+    padding-right: 15px;
+    padding-left: 15px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: rgb(175, 125, 107);
+    height: 100px;
+}
+.navdiv{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+.logo a{
+    font-size: 35px; 
+    font-weight: 600; 
+    color: white;
+    position: sticky;
+}
+li{
+    list-style: none; 
+    display: inline-block;
+}
+li a{
+    color: white; 
+    font-size: 18px; 
+    font-weight: bold; 
+    margin-right: 25px;
+}
+button{
+    background-color: black; 
+    margin-left: 10px; 
+    border-radius: 10px; 
+    padding: 10px; 
+    width: 90px;
+}
+/*styling for the navigation area*/
+/*.navba {
+    float: right;
+    margin: 5em,3em,0 0;
+    width: 70%;
+}
+nav li{
+    display: inline-block;
+    font-size: 7.2em;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 20;
+    text-align: center;
+}
+nav ul li{
+    display: inline;
+    margin: 0 30px;
+    list-style: none;
+}
+nav ul li a {
+    color: rgb(18, 19, 19);
+    text-decoration: none;
+    padding: 0.5em 1em;
+    font-size: large;
+    text-align: center;
+}*/
+nav ul  li a:hover{
+    color:white;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+ul{
+    list-style-type: square;
+}
+footer{
+    background: rgb(156, 177, 103); 
+    font-family: calibri; 
+    padding-right: 15px;
+    padding-left: 15px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: rgb(175, 125, 107);
+    height: 100px;
+
+}
+footer p{
+    font-size: 0.75em;
+    text-align: center;
+    color: #000;
+    padding: 0 1em;
+    position: -webkit-sticky;
+    position: sticky;
+}
+/*styling for contact div the contact us page*/
+#contact {
+    margin-top: 10px;
+    text-align: center;
+}
+/*styling the registration form*/
+#reg-form{
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    width: 180px;
+    margin-bottom: 10px;
+}
+input, select, textarea {
+    width: 300px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: aliceblue;
+}
+/*styling for the fieldset*/
+form#registration{
+    flex: 1;
+    margin: 10px;
+}
+label {
+    display: inline-block;
+    width: 180px;
+    margin-bottom: 10px;
+}
